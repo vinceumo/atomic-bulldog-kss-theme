@@ -6,9 +6,7 @@
   "destination": "../static/styleguide/",
   "builder": "../kss_theme/",
   "css": [
-    "../css/themes/kss-overrides.min.css",
     "../css/screen.css",
-    "../css/themes/theme-invert.min.css",
     "../css/screen-fallback.css",
     "../css/screen-fallback-ie.css"
   ],

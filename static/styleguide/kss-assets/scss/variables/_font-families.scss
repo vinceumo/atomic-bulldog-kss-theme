@@ -1,18 +1,16 @@
 // ------------------------------
 // Import fonts
 // ------------------------------
-@import url('https://fonts.googleapis.com/css?family=Rubik');
-@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 // ------------------------------
 // Sass Variables
 // ------------------------------
 $font-family-prefix: --font-family-;
 $font-families: (
-  paragraph: ("Lato", "Helvetica Neue", Arial, sans-serif),
-  title: ("Rubik", "Helvetica Neue", Arial, sans-serif),
-  highlight: ("Rubik", "Helvetica Neue", Arial, sans-serif),
-  icon: ('icomoon')
+  paragraph: ("Open Sans", "Helvetica Neue", Arial, sans-serif),
+  title: ("Open Sans", "Helvetica Neue", Arial, sans-serif),
+  highlight: ("Open Sans", "Helvetica Neue", Arial, sans-serif),
 );
 
 // ------------------------------
@@ -50,10 +48,9 @@ $font-families: (
 // Font Families are in the map `$font-families`
 //
 // ---------------
-// * `paragraph`: Lato,
-// * `title`: Rubik,
-// * `highlight`: Rubik
-// * `icon`: icomoon
+// * `paragraph`: Open Sans,
+// * `title`: Open Sans,
+// * `highlight`: Open Sans
 // ---------------
 //
 // Font Families can be called in the sass project using the functions:
@@ -62,7 +59,7 @@ $font-families: (
 //
 // Usage of font-family():
 // * `font-family(title)` => `var(--font-family-title)` If $use-css-var = true
-// * `font-family(title)` => `"Rubik", "Helvetica Neue", Arial, sans-serif` If $use-css-var = false
-// * `font-family(title, true)` => `"Rubik", "Helvetica Neue", Arial, sans-serif`
+// * `font-family(title)` => `"Open Sans", "Helvetica Neue", Arial, sans-serif` If $use-css-var = false
+// * `font-family(title, true)` => `"Open Sans", "Helvetica Neue", Arial, sans-serif`
 //
 // Styleguide Variables.fontfamilies

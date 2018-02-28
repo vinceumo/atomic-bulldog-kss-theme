@@ -1,0 +1,21 @@
+.kss-page-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  grid-template-areas:
+    "sidebar main"
+    "sidebar footer";
+  grid-gap: spacer(4);
+
+  .kss-sidebar {
+    grid-area: sidebar;
+  }
+
+  .kss-main {
+    grid-area: main;
+  }
+
+  .kss-footer {
+    grid-area: footer;
+    align-self: end;
+  }
+}
