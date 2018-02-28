@@ -1,291 +1,235 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Atomic Bulldog - UI/pattern library</title>
+<html>
+  <head>
+    <title>Atomic Bulldog - UI/pattern library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="generator" content="kss-node">
 
-  <meta name="description" content="">
-  <meta name="generator" content="kss-node">
-  <meta name="viewport" content="width=device-width">
-
-  <link rel="stylesheet" href="kss-assets/kss.css">
-  <link rel="stylesheet" href="../css/themes/kss-overrides.min.css">
+    <link rel="stylesheet" href="kss-assets/css/vendors/prism.css">
+    <link rel="stylesheet" href="kss-assets/css/kss.css">
+    <link rel="stylesheet" href="../css/themes/kss-overrides.min.css">
 <link rel="stylesheet" href="../css/screen.css">
 <link rel="stylesheet" href="../css/themes/theme-invert.min.css">
 <link rel="stylesheet" href="../css/screen-fallback.css">
 <link rel="stylesheet" href="../css/screen-fallback-ie.css">
 
-</head>
-<body id="kss-node" >
+  </head>
 
-<div class="kss-sidebar kss-style">
-  <header class="kss-header">
-    <h1 class="kss-doc-title">Atomic Bulldog - UI/pattern library</h1>
-  </header>
-  <nav class="kss-nav">
-    <ul class="kss-nav__menu">
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="./">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Overview</span>
+  <body class="kss-body">
+
+
+
+        <!-- header. -->
+    <header class="kss-header">
+      <section class="kss-header__inner">
+        <a class="kss-header__hamburger-trigger">
+          <div class="kss-header__hamburger"></div>
         </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-atoms.html">
-          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Atoms</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-molecules.html">
-          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Molecules</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-organisms.html">
-          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Organisms</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-layout.html">
-          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Layouts</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-templates.html">
-          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Templates</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-variables.html">
-          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Sass variables</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-mixins.html">
-          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Sass Mixins</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-functions.html">
-          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Sass Functions</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-vendors.html">
-          <span class="kss-nav__ref">9</span><span class="kss-nav__name">Vendors</span>
-        </a>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-themes.html">
-          <span class="kss-nav__ref">10</span><span class="kss-nav__name">Themes</span>
-        </a>
-            <ul class="kss-nav__menu-child">
-              <li class="kss-nav__menu-item">
-                <a class="kss-nav__menu-link" href="section-themes.html#kssref-themes-invert">
-                  <span class="kss-nav__ref ">10.1</span
-                  ><span class="kss-nav__name">Theme Invert</span>
-                </a>
-              </li>
-              <li class="kss-nav__menu-item">
-                <a class="kss-nav__menu-link" href="section-themes.html#kssref-themes-invert-atoms">
-                  <span class="kss-nav__ref kss-nav__ref-child">10.1.1</span
-                  ><span class="kss-nav__name">Themes.Invert.Atoms</span>
-                </a>
-              </li>
-              <li class="kss-nav__menu-item">
-                <a class="kss-nav__menu-link" href="section-themes.html#kssref-themes-invert-variables">
-                  <span class="kss-nav__ref kss-nav__ref-child">10.1.2</span
-                  ><span class="kss-nav__name">Themes.Invert.Variables</span>
-                </a>
-              </li>
-            </ul>
-      </li>
-      <li class="kss-nav__menu-item">
-        <a class="kss-nav__menu-link" href="section-settings.html">
-          <span class="kss-nav__ref">11</span><span class="kss-nav__name">Project settings</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+        <h1 class="kss-header__title kss-title">Atomic Bulldog - UI/pattern library</h1>
+      </section>
+    </header>
+    <!-- /header. -->
+
+
+    <!-- navigation. -->
+    <section class="kss-navigation">
+      <h1 class="kss-navigation__title kss-title">Atomic Bulldog - UI/pattern library</h1>
+      <ul class="kss-nav">
+        <li class="kss-nav__item">
+          <a href="index.html">
+            <span class="kss-nav__ref">0</span>
+            <span class="kss-nav__name">Introduction</span>
+          </a>
+        </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-atoms.html">
+              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__name">Atoms</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-molecules.html">
+              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__name">Molecules</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-organisms.html">
+              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__name">Organisms</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-layout.html">
+              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__name">Layouts</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-templates.html">
+              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__name">Templates</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-variables.html">
+              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__name">Sass variables</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-mixins.html">
+              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__name">Sass Mixins</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-functions.html">
+              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__name">Sass Functions</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-vendors.html">
+              <span class="kss-nav__ref">9</span>
+              <span class="kss-nav__name">Vendors</span>
+            </a>
+          </li>
+          <li class="kss-nav__item">
+            <a class="kss-state-active" href="section-themes.html">
+              <span class="kss-nav__ref">10</span>
+              <span class="kss-nav__name">Themes</span>
+            </a>
+                <ul class="kss-nav__subnav">
+                    <li class="kss-nav__item ">
+                      <a href="section-themes.html#kssref-themes-invert">
+                        <span class="kss-nav__ref">10.1</span>
+                        <span class="kss-nav__name">Theme Invert</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-themes.html#kssref-themes-invert-atoms">
+                        <span class="kss-nav__ref">10.1.1</span>
+                        <span class="kss-nav__name">Themes.Invert.Atoms</span>
+                      </a>
+                    </li>
+                    <li class="kss-nav__item kss-nav__item--grandchild">
+                      <a href="section-themes.html#kssref-themes-invert-variables">
+                        <span class="kss-nav__ref">10.1.2</span>
+                        <span class="kss-nav__name">Themes.Invert.Variables</span>
+                      </a>
+                    </li>
+                </ul>
+          </li>
+          <li class="kss-nav__item">
+            <a class="" href="section-settings.html">
+              <span class="kss-nav__ref">11</span>
+              <span class="kss-nav__name">Project settings</span>
+            </a>
+          </li>
+      </ul>
+    </section>
+    <!-- /navigation. -->
+
+
+    <!-- documentation. -->
+    <section class="kss-documentation">
+
+        <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+            <header class="kss-section kss-section--depth-1" id="kssref-themes">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>themes/__documentation.scss</span>, line <span>5</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-themes">
+                <h1 class="kss-section__item kss-section__item--depth-1">
+                  <span class="kss-section__ref">10</span>
+                  <span class="kss-section__name">Themes</span>
+                </h1>
+              </a>
+
+
+            </article>
+
+
+            </header>
+            <section class="kss-section kss-section--depth-2" id="kssref-themes-invert">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>themes/_theme-invert.scss</span>, line <span>8</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-themes-invert">
+                <h2 class="kss-section__item kss-section__item--depth-2">
+                  <span class="kss-section__ref">10.1</span>
+                  <span class="kss-section__name">Theme Invert</span>
+                </h2>
+              </a>
+
+                <div class="kss-section__description"><p>The invert theme can be called using the class <code>theme-invert</code> or <code>is-theme-invert</code>.</p>
 </div>
-<article role="main" class="kss-main">
 
-    <div id="kssref-themes" class="kss-section kss-section--depth-1 ">
-
-      <div class="kss-style">
-        <h1 class="kss-title kss-title--level-1">
-          <a class="kss-title__permalink" href="#kssref-themes">
-            <span class="kss-title__ref">
-              10
-              <span class="kss-title__permalink-hash">
-                  #Themes
-              </span>
-            </span>
-            Themes
-          </a>
-        </h1>
+            </article>
 
 
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-themes-invert-atoms">
 
-      </div>
+            <article class="kss-section__content">
 
-
-        <div class="kss-source kss-style">
-          Source: <code>themes/__documentation.scss</code>, line 5
-        </div>
-
-    </div>
-    <section id="kssref-themes-invert" class="kss-section kss-section--depth-2 ">
-
-      <div class="kss-style">
-        <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-themes-invert">
-            <span class="kss-title__ref">
-              10.1
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert
-              </span>
-            </span>
-            Theme Invert
-          </a>
-        </h2>
-
-
-          <div class="kss-description">
-            <p>The invert theme can be called using the class <code>theme-invert</code> or <code>is-theme-invert</code>.</p>
-
-          </div>
-
-      </div>
-
-
-        <div class="kss-source kss-style">
-          Source: <code>themes/_theme-invert.scss</code>, line 8
-        </div>
-
-    </section>
-    <section id="kssref-themes-invert-atoms" class="kss-section kss-section--depth-3 ">
-
-      <div class="kss-style">
-        <h3 class="kss-title kss-title--level-3">
-          <a class="kss-title__permalink" href="#kssref-themes-invert-atoms">
-            <span class="kss-title__ref">
-              10.1.1
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert.Atoms
-              </span>
-            </span>
-            Themes.Invert.Atoms
-          </a>
-        </h3>
-
-
-
-      </div>
-
-
-
-    </section>
-    <section id="kssref-themes-invert-atoms-button" class="kss-section kss-section--depth-4 ">
-
-      <div class="kss-style">
-        <h4 class="kss-title kss-title--level-4">
-          <a class="kss-title__permalink" href="#kssref-themes-invert-atoms-button">
-            <span class="kss-title__ref">
-              10.1.1.1
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert.Atoms.button
-              </span>
-            </span>
-            Buttons theme invert
-          </a>
-        </h4>
-
-          <p class="kss-toolbar">
-              <a href="#kssref-themes-invert-atoms-button" data-kss-fullscreen="kssref-themes-invert-atoms-button">
-                <span class="kss-toolbar__tooltip">Toggle full screen</span>
-                <svg class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
-                </svg>
-                <svg class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
-                </svg>
+              <a class="kss-section__permalink" href="#kssref-themes-invert-atoms">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">10.1.1</span>
+                  <span class="kss-section__name">Themes.Invert.Atoms</span>
+                </h3>
               </a>
-              <a href="item-themes-invert-atoms-button.html" target="_blank">
-                <span class="kss-toolbar__tooltip">Open in new window</span>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
-                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
-                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
-                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
-                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
-                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
-                </svg>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-themes-invert-atoms-button">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>atoms/_btn.scss</span>, line <span>151</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-themes-invert-atoms-button">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">10.1.1.1</span>
+                  <span class="kss-section__name">Buttons theme invert</span>
+                </h4>
               </a>
-            <a href="#kssref-themes-invert-atoms-button" data-kss-guides="true">
-              <span class="kss-toolbar__tooltip">Toggle example guides</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
-              </svg>
-            </a>
-            <a href="#kssref-themes-invert-atoms-button" data-kss-markup="true">
-              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
-                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
-              </svg>
-            </a>
-          </p>
 
 
-      </div>
+            </article>
 
-        <div class="kss-modifier__wrapper">
-          <div class="kss-modifier__heading kss-style">
-            Examples
-          </div>
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
 
-            <div class="kss-modifier__default-name kss-style">
-              Default styling
-            </div>
+                  <h2 class="kss-modifiers__name">Default styling</h2>
 
-          <div class="kss-modifier__example">
-            <div class="theme-invert">
-    <button class="btn ">.btn .</button>
-    <button class="btn  is-outlined">.btn . .is-outlined</button>
-    <button class="btn  is-hovered">.btn . .is-hover</button>
-    <button class="btn  is-focused">.btn . .is-focused</button>
-    <button class="btn  is-rounded">.btn . .is-rounded</button>
-    <button class="btn  is-loading">.btn . .is-loading</button>
-    <button class="btn " disabled>.btn . disabled</button>
-    <button class="btn  is-theme-default">.btn . .is-theme-default</button>
-<div>
-            <div class="kss-modifier__example-footer"></div>
-          </div>
+                <div class="kss-modifiers__example"><div class="theme-invert">
+    <button class="btn [modifier]">.btn .[modifier]</button>
+    <button class="btn [modifier] is-outlined">.btn .[modifier] .is-outlined</button>
+    <button class="btn [modifier] is-hovered">.btn .[modifier] .is-hover</button>
+    <button class="btn [modifier] is-focused">.btn .[modifier] .is-focused</button>
+    <button class="btn [modifier] is-rounded">.btn .[modifier] .is-rounded</button>
+    <button class="btn [modifier] is-loading">.btn .[modifier] .is-loading</button>
+    <button class="btn [modifier]" disabled>.btn .[modifier] disabled</button>
+    <button class="btn [modifier] is-theme-default">.btn .[modifier] .is-theme-default</button>
+<div></div>
 
-            <div class="kss-modifier__name kss-style">
-              .is-primary
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Primary color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+                  <h2 class="kss-modifiers__name">.is-primary</h2>
+
+                  <p class="kss-modifiers__description">Primary color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-primary">.btn .is-primary</button>
     <button class="btn is-primary is-outlined">.btn .is-primary .is-outlined</button>
     <button class="btn is-primary is-hovered">.btn .is-primary .is-hover</button>
@@ -294,17 +238,12 @@
     <button class="btn is-primary is-loading">.btn .is-primary .is-loading</button>
     <button class="btn is-primary" disabled>.btn .is-primary disabled</button>
     <button class="btn is-primary is-theme-default">.btn .is-primary .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .is-secondary
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Secondary color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+<div></div>
+                  <h2 class="kss-modifiers__name">.is-secondary</h2>
+
+                  <p class="kss-modifiers__description">Secondary color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-secondary">.btn .is-secondary</button>
     <button class="btn is-secondary is-outlined">.btn .is-secondary .is-outlined</button>
     <button class="btn is-secondary is-hovered">.btn .is-secondary .is-hover</button>
@@ -313,17 +252,12 @@
     <button class="btn is-secondary is-loading">.btn .is-secondary .is-loading</button>
     <button class="btn is-secondary" disabled>.btn .is-secondary disabled</button>
     <button class="btn is-secondary is-theme-default">.btn .is-secondary .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .is-link
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Link color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+<div></div>
+                  <h2 class="kss-modifiers__name">.is-link</h2>
+
+                  <p class="kss-modifiers__description">Link color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-link">.btn .is-link</button>
     <button class="btn is-link is-outlined">.btn .is-link .is-outlined</button>
     <button class="btn is-link is-hovered">.btn .is-link .is-hover</button>
@@ -332,17 +266,12 @@
     <button class="btn is-link is-loading">.btn .is-link .is-loading</button>
     <button class="btn is-link" disabled>.btn .is-link disabled</button>
     <button class="btn is-link is-theme-default">.btn .is-link .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .is-success
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Success color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+<div></div>
+                  <h2 class="kss-modifiers__name">.is-success</h2>
+
+                  <p class="kss-modifiers__description">Success color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-success">.btn .is-success</button>
     <button class="btn is-success is-outlined">.btn .is-success .is-outlined</button>
     <button class="btn is-success is-hovered">.btn .is-success .is-hover</button>
@@ -351,17 +280,12 @@
     <button class="btn is-success is-loading">.btn .is-success .is-loading</button>
     <button class="btn is-success" disabled>.btn .is-success disabled</button>
     <button class="btn is-success is-theme-default">.btn .is-success .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .is-danger
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Danger color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+<div></div>
+                  <h2 class="kss-modifiers__name">.is-danger</h2>
+
+                  <p class="kss-modifiers__description">Danger color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-danger">.btn .is-danger</button>
     <button class="btn is-danger is-outlined">.btn .is-danger .is-outlined</button>
     <button class="btn is-danger is-hovered">.btn .is-danger .is-hover</button>
@@ -370,17 +294,12 @@
     <button class="btn is-danger is-loading">.btn .is-danger .is-loading</button>
     <button class="btn is-danger" disabled>.btn .is-danger disabled</button>
     <button class="btn is-danger is-theme-default">.btn .is-danger .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .is-warning
-            </div>
-            <div class="kss-modifier__description kss-style">
-              warning color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+<div></div>
+                  <h2 class="kss-modifiers__name">.is-warning</h2>
+
+                  <p class="kss-modifiers__description">warning color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-warning">.btn .is-warning</button>
     <button class="btn is-warning is-outlined">.btn .is-warning .is-outlined</button>
     <button class="btn is-warning is-hovered">.btn .is-warning .is-hover</button>
@@ -389,17 +308,12 @@
     <button class="btn is-warning is-loading">.btn .is-warning .is-loading</button>
     <button class="btn is-warning" disabled>.btn .is-warning disabled</button>
     <button class="btn is-warning is-theme-default">.btn .is-warning .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .is-light
-            </div>
-            <div class="kss-modifier__description kss-style">
-              light color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+<div></div>
+                  <h2 class="kss-modifiers__name">.is-light</h2>
+
+                  <p class="kss-modifiers__description">light color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-light">.btn .is-light</button>
     <button class="btn is-light is-outlined">.btn .is-light .is-outlined</button>
     <button class="btn is-light is-hovered">.btn .is-light .is-hover</button>
@@ -408,17 +322,12 @@
     <button class="btn is-light is-loading">.btn .is-light .is-loading</button>
     <button class="btn is-light" disabled>.btn .is-light disabled</button>
     <button class="btn is-light is-theme-default">.btn .is-light .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .is-dark
-            </div>
-            <div class="kss-modifier__description kss-style">
-              dark color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+<div></div>
+                  <h2 class="kss-modifiers__name">.is-dark</h2>
+
+                  <p class="kss-modifiers__description">dark color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
     <button class="btn is-dark">.btn .is-dark</button>
     <button class="btn is-dark is-outlined">.btn .is-dark .is-outlined</button>
     <button class="btn is-dark is-hovered">.btn .is-dark .is-hover</button>
@@ -427,16 +336,11 @@
     <button class="btn is-dark is-loading">.btn .is-dark .is-loading</button>
     <button class="btn is-dark" disabled>.btn .is-dark disabled</button>
     <button class="btn is-dark is-theme-default">.btn .is-dark .is-theme-default</button>
-<div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-        </div>
+<div></div>
+              </article>
 
-          <details class="kss-markup kss-style">
-            <summary>
-                Markup
-            </summary>
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;theme-invert&quot;&gt;
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;theme-invert&quot;&gt;
     &lt;button class&#x3D;&quot;btn [modifier]&quot;&gt;.btn .[modifier]&lt;/button&gt;
     &lt;button class&#x3D;&quot;btn [modifier] is-outlined&quot;&gt;.btn .[modifier] .is-outlined&lt;/button&gt;
     &lt;button class&#x3D;&quot;btn [modifier] is-hovered&quot;&gt;.btn .[modifier] .is-hover&lt;/button&gt;
@@ -446,445 +350,223 @@
     &lt;button class&#x3D;&quot;btn [modifier]&quot; disabled&gt;.btn .[modifier] disabled&lt;/button&gt;
     &lt;button class&#x3D;&quot;btn [modifier] is-theme-default&quot;&gt;.btn .[modifier] .is-theme-default&lt;/button&gt;
 &lt;div&gt;</code></pre>
-          </details>
+                </article>
 
-        <div class="kss-source kss-style">
-          Source: <code>atoms/_btn.scss</code>, line 151
-        </div>
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-themes-invert-atoms-modifiers">
 
-    </section>
-    <section id="kssref-themes-invert-atoms-modifiers" class="kss-section kss-section--depth-4 ">
+            <article class="kss-section__content">
 
-      <div class="kss-style">
-        <h4 class="kss-title kss-title--level-4">
-          <a class="kss-title__permalink" href="#kssref-themes-invert-atoms-modifiers">
-            <span class="kss-title__ref">
-              10.1.1.2
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert.Atoms.Modifiers
-              </span>
-            </span>
-            Themes.Invert.Atoms.Modifiers
-          </a>
-        </h4>
-
-
-
-      </div>
-
-
-
-    </section>
-    <section id="kssref-themes-invert-atoms-modifiers-bgcolors" class="kss-section kss-section--depth-5 ">
-
-      <div class="kss-style">
-        <h5 class="kss-title kss-title--level-5">
-          <a class="kss-title__permalink" href="#kssref-themes-invert-atoms-modifiers-bgcolors">
-            <span class="kss-title__ref">
-              10.1.1.2.1
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert.Atoms.Modifiers.bgcolors
-              </span>
-            </span>
-            Background theme invert
-          </a>
-        </h5>
-
-          <p class="kss-toolbar">
-              <a href="#kssref-themes-invert-atoms-modifiers-bgcolors" data-kss-fullscreen="kssref-themes-invert-atoms-modifiers-bgcolors">
-                <span class="kss-toolbar__tooltip">Toggle full screen</span>
-                <svg class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
-                </svg>
-                <svg class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
-                </svg>
+              <a class="kss-section__permalink" href="#kssref-themes-invert-atoms-modifiers">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">10.1.1.2</span>
+                  <span class="kss-section__name">Themes.Invert.Atoms.Modifiers</span>
+                </h4>
               </a>
-              <a href="item-themes-invert-atoms-modifiers-bgcolors.html" target="_blank">
-                <span class="kss-toolbar__tooltip">Open in new window</span>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
-                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
-                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
-                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
-                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
-                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
-                </svg>
+
+
+            </article>
+
+
+            </section>
+            <section class="kss-section kss-section--depth-5" id="kssref-themes-invert-atoms-modifiers-bgcolors">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>atoms/modifiers/_bg-color.scss</span>, line <span>65</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-themes-invert-atoms-modifiers-bgcolors">
+                <h5 class="kss-section__item kss-section__item--depth-5">
+                  <span class="kss-section__ref">10.1.1.2.1</span>
+                  <span class="kss-section__name">Background theme invert</span>
+                </h5>
               </a>
-            <a href="#kssref-themes-invert-atoms-modifiers-bgcolors" data-kss-guides="true">
-              <span class="kss-toolbar__tooltip">Toggle example guides</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
-              </svg>
-            </a>
-            <a href="#kssref-themes-invert-atoms-modifiers-bgcolors" data-kss-markup="true">
-              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
-                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
-              </svg>
-            </a>
-          </p>
 
 
-      </div>
+            </article>
 
-        <div class="kss-modifier__wrapper">
-          <div class="kss-modifier__heading kss-style">
-            Examples
-          </div>
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
 
-            <div class="kss-modifier__default-name kss-style">
-              Default styling
-            </div>
+                  <h2 class="kss-modifiers__name">Default styling</h2>
 
-          <div class="kss-modifier__example">
-            <div class="theme-invert"><div class=" has-p-3">Content...</div></div>
-            <div class="kss-modifier__example-footer"></div>
-          </div>
+                <div class="kss-modifiers__example"><div class="theme-invert"><div class="[modifier] has-p-3">Content...</div></div></div>
 
-            <div class="kss-modifier__name kss-style">
-              .has-bg-primary
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Primary color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-primary has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-bg-secondary
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Secondary color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-secondary has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-bg-link
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Link color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-link has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-bg-success
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Success color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-success has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-bg-danger
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Danger color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-danger has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-bg-warning
-            </div>
-            <div class="kss-modifier__description kss-style">
-              warning color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-warning has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-bg-light
-            </div>
-            <div class="kss-modifier__description kss-style">
-              light color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-light has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-bg-dark
-            </div>
-            <div class="kss-modifier__description kss-style">
-              dark color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert"><div class="has-bg-dark has-p-3">Content...</div></div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-        </div>
+                  <h2 class="kss-modifiers__name">.has-bg-primary</h2>
 
-          <details class="kss-markup kss-style">
-            <summary>
-                Markup
-            </summary>
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;theme-invert&quot;&gt;&lt;div class&#x3D;&quot;[modifier] has-p-3&quot;&gt;Content...&lt;/div&gt;&lt;/div&gt;</code></pre>
-          </details>
+                  <p class="kss-modifiers__description">Primary color</p>
 
-        <div class="kss-source kss-style">
-          Source: <code>atoms/modifiers/_bg-color.scss</code>, line 65
-        </div>
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-primary has-p-3">Content...</div></div></div>
+                  <h2 class="kss-modifiers__name">.has-bg-secondary</h2>
 
-    </section>
-    <section id="kssref-themes-invert-atoms-modifiers-textcolor" class="kss-section kss-section--depth-5 ">
+                  <p class="kss-modifiers__description">Secondary color</p>
 
-      <div class="kss-style">
-        <h5 class="kss-title kss-title--level-5">
-          <a class="kss-title__permalink" href="#kssref-themes-invert-atoms-modifiers-textcolor">
-            <span class="kss-title__ref">
-              10.1.1.2.2
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert.Atoms.Modifiers.textcolor
-              </span>
-            </span>
-            Text colors theme invert
-          </a>
-        </h5>
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-secondary has-p-3">Content...</div></div></div>
+                  <h2 class="kss-modifiers__name">.has-bg-link</h2>
 
-          <p class="kss-toolbar">
-              <a href="#kssref-themes-invert-atoms-modifiers-textcolor" data-kss-fullscreen="kssref-themes-invert-atoms-modifiers-textcolor">
-                <span class="kss-toolbar__tooltip">Toggle full screen</span>
-                <svg class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
-                </svg>
-                <svg class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
-                </svg>
+                  <p class="kss-modifiers__description">Link color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-link has-p-3">Content...</div></div></div>
+                  <h2 class="kss-modifiers__name">.has-bg-success</h2>
+
+                  <p class="kss-modifiers__description">Success color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-success has-p-3">Content...</div></div></div>
+                  <h2 class="kss-modifiers__name">.has-bg-danger</h2>
+
+                  <p class="kss-modifiers__description">Danger color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-danger has-p-3">Content...</div></div></div>
+                  <h2 class="kss-modifiers__name">.has-bg-warning</h2>
+
+                  <p class="kss-modifiers__description">warning color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-warning has-p-3">Content...</div></div></div>
+                  <h2 class="kss-modifiers__name">.has-bg-light</h2>
+
+                  <p class="kss-modifiers__description">light color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-light has-p-3">Content...</div></div></div>
+                  <h2 class="kss-modifiers__name">.has-bg-dark</h2>
+
+                  <p class="kss-modifiers__description">dark color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert"><div class="has-bg-dark has-p-3">Content...</div></div></div>
+              </article>
+
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;theme-invert&quot;&gt;&lt;div class&#x3D;&quot;[modifier] has-p-3&quot;&gt;Content...&lt;/div&gt;&lt;/div&gt;</code></pre>
+                </article>
+
+            </section>
+            <section class="kss-section kss-section--depth-5" id="kssref-themes-invert-atoms-modifiers-textcolor">
+
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>atoms/modifiers/_text-color.scss</span>, line <span>56</span></p>
+
+              <a class="kss-section__permalink" href="#kssref-themes-invert-atoms-modifiers-textcolor">
+                <h5 class="kss-section__item kss-section__item--depth-5">
+                  <span class="kss-section__ref">10.1.1.2.2</span>
+                  <span class="kss-section__name">Text colors theme invert</span>
+                </h5>
               </a>
-              <a href="item-themes-invert-atoms-modifiers-textcolor.html" target="_blank">
-                <span class="kss-toolbar__tooltip">Open in new window</span>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
-                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
-                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
-                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
-                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
-                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
-                </svg>
-              </a>
-            <a href="#kssref-themes-invert-atoms-modifiers-textcolor" data-kss-guides="true">
-              <span class="kss-toolbar__tooltip">Toggle example guides</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
-                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
-                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
-              </svg>
-            </a>
-            <a href="#kssref-themes-invert-atoms-modifiers-textcolor" data-kss-markup="true">
-              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
-              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
-                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
-                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
-              </svg>
-            </a>
-          </p>
 
 
-      </div>
+            </article>
 
-        <div class="kss-modifier__wrapper">
-          <div class="kss-modifier__heading kss-style">
-            Examples
-          </div>
+              <article class="kss-section__modifiers">
+                <h1 class="kss-modifiers__heading">Examples</h1>
 
-            <div class="kss-modifier__default-name kss-style">
-              Default styling
-            </div>
+                  <h2 class="kss-modifiers__name">Default styling</h2>
 
-          <div class="kss-modifier__example">
-            <div class="theme-invert">
- <p class="">
+                <div class="kss-modifiers__example"><div class="theme-invert">
+ <p class="[modifier]">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-            <div class="kss-modifier__example-footer"></div>
-          </div>
+</div></div>
 
-            <div class="kss-modifier__name kss-style">
-              .has-text-primary
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Primary color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+                  <h2 class="kss-modifiers__name">.has-text-primary</h2>
+
+                  <p class="kss-modifiers__description">Primary color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-primary">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-text-secondary
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Secondary color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+</div></div>
+                  <h2 class="kss-modifiers__name">.has-text-secondary</h2>
+
+                  <p class="kss-modifiers__description">Secondary color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-secondary">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-text-link
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Link color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+</div></div>
+                  <h2 class="kss-modifiers__name">.has-text-link</h2>
+
+                  <p class="kss-modifiers__description">Link color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-link">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-text-success
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Success color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+</div></div>
+                  <h2 class="kss-modifiers__name">.has-text-success</h2>
+
+                  <p class="kss-modifiers__description">Success color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-success">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-text-danger
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Danger color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+</div></div>
+                  <h2 class="kss-modifiers__name">.has-text-danger</h2>
+
+                  <p class="kss-modifiers__description">Danger color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-danger">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-text-warning
-            </div>
-            <div class="kss-modifier__description kss-style">
-              warning color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+</div></div>
+                  <h2 class="kss-modifiers__name">.has-text-warning</h2>
+
+                  <p class="kss-modifiers__description">warning color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-warning">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-text-light
-            </div>
-            <div class="kss-modifier__description kss-style">
-              light color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+</div></div>
+                  <h2 class="kss-modifiers__name">.has-text-light</h2>
+
+                  <p class="kss-modifiers__description">light color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-light">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .has-text-dark
-            </div>
-            <div class="kss-modifier__description kss-style">
-              dark color
-            </div>
-            <div class="kss-modifier__example">
-              <div class="theme-invert">
+</div></div>
+                  <h2 class="kss-modifiers__name">.has-text-dark</h2>
+
+                  <p class="kss-modifiers__description">dark color</p>
+
+                  <div class="kss-modifiers__example"><div class="theme-invert">
  <p class="has-text-dark">
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? <br>
    Hoc sic expositum dissimile est superiori. Avaritiamne minuis? Prave, nequiter, turpiter cenabat; Dat enim intervalla et relaxat. Bonum patria: miserum exilium.
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  </p>
-</div>
-              <div class="kss-modifier__example-footer"></div>
-            </div>
-        </div>
+</div></div>
+              </article>
 
-          <details class="kss-markup kss-style">
-            <summary>
-                Markup
-            </summary>
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;theme-invert&quot;&gt;
+                <article class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;theme-invert&quot;&gt;
  &lt;p class&#x3D;&quot;[modifier]&quot;&gt;
    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem quisquam ea consequuntur nostrum sint.
    Explicabo neque architecto sint voluptatibus ullam et ea recusandae nihil unde quos amet hic, ut iste? &lt;br&gt;
@@ -892,53 +574,38 @@
    Quid enim possumus hoc agere divinius? Non est ista, inquam, Piso, magna dissensio. Quid est enim aliud esse versutum?
  &lt;/p&gt;
 &lt;/div&gt;</code></pre>
-          </details>
+                </article>
 
-        <div class="kss-source kss-style">
-          Source: <code>atoms/modifiers/_text-color.scss</code>, line 56
-        </div>
+            </section>
+            <section class="kss-section kss-section--depth-3" id="kssref-themes-invert-variables">
 
-    </section>
-    <section id="kssref-themes-invert-variables" class="kss-section kss-section--depth-3 ">
+            <article class="kss-section__content">
 
-      <div class="kss-style">
-        <h3 class="kss-title kss-title--level-3">
-          <a class="kss-title__permalink" href="#kssref-themes-invert-variables">
-            <span class="kss-title__ref">
-              10.1.2
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert.Variables
-              </span>
-            </span>
-            Themes.Invert.Variables
-          </a>
-        </h3>
+              <a class="kss-section__permalink" href="#kssref-themes-invert-variables">
+                <h3 class="kss-section__item kss-section__item--depth-3">
+                  <span class="kss-section__ref">10.1.2</span>
+                  <span class="kss-section__name">Themes.Invert.Variables</span>
+                </h3>
+              </a>
 
 
-
-      </div>
-
+            </article>
 
 
-    </section>
-    <section id="kssref-themes-invert-variables-colorsswatches" class="kss-section kss-section--depth-4 ">
+            </section>
+            <section class="kss-section kss-section--depth-4" id="kssref-themes-invert-variables-colorsswatches">
 
-      <div class="kss-style">
-        <h4 class="kss-title kss-title--level-4">
-          <a class="kss-title__permalink" href="#kssref-themes-invert-variables-colorsswatches">
-            <span class="kss-title__ref">
-              10.1.2.1
-              <span class="kss-title__permalink-hash">
-                  #Themes.Invert.Variables.colorsswatches
-              </span>
-            </span>
-            Color Swatches
-          </a>
-        </h4>
+            <article class="kss-section__content">
+                <p class="kss-section__source">Source: <span>themes/variables/_colors-theme-invert.scss</span>, line <span>96</span></p>
 
+              <a class="kss-section__permalink" href="#kssref-themes-invert-variables-colorsswatches">
+                <h4 class="kss-section__item kss-section__item--depth-4">
+                  <span class="kss-section__ref">10.1.2.1</span>
+                  <span class="kss-section__name">Color Swatches</span>
+                </h4>
+              </a>
 
-          <div class="kss-description">
-            <!--ONLY FOR KSS-->
+                <div class="kss-section__description"><!--ONLY FOR KSS-->
 <div id="kss-map-colors" class="theme-invert">
     <div class="kss-color-item" data-color="primary"></div>
     <div class="kss-color-item" data-color="secondary"></div>
@@ -949,51 +616,27 @@
     <div class="kss-color-item" data-color="warning"></div>
     <div class="kss-color-item" data-color="light"></div>
     <div class="kss-color-item" data-color="dark"></div>
-</div>
-          </div>
+</div></div>
 
-      </div>
+            </article>
 
 
-        <div class="kss-source kss-style">
-          Source: <code>themes/variables/_colors-theme-invert.scss</code>, line 96
-        </div>
-
+            </section>
     </section>
-</article>
+    <!-- /documentation. -->
 
-<!-- SCRIPTS -->
-<script src="kss-assets/kss.js"></script>
-<script src="kss-assets/scrollspy.js"></script>
-<script src="kss-assets/prettify.js"></script>
-<script src="kss-assets/kss-fullscreen.js"></script>
-<script src="kss-assets/kss-guides.js"></script>
-<script src="kss-assets/kss-markup.js"></script>
-<script>
-  prettyPrint();
-  var spy = new ScrollSpy('#kss-node', {
-    nav: '.kss-nav__menu-child > li > a',
-    className: 'is-in-viewport'
-  });
-  var kssFullScreen = new KssFullScreen({
-    idPrefix: 'kss-fullscreen-',
-    bodyClass: 'kss-fullscreen-mode',
-    elementClass: 'is-fullscreen'
-  });
-  var kssGuides = new KssGuides({
-    bodyClass: 'kss-guides-mode'
-  });
-  var kssMarkup = new KssMarkup({
-    bodyClass: 'kss-markup-mode',
-    detailsClass: 'kss-markup'
-  });
-</script>
-<script src="../js/kss.js"></script>
+    
+
+
+    <!-- scripts -->
+    <script src="kss-assets/js/vendors/jquery-3.3.1.min.js"></script>
+    <script src="kss-assets/js/vendors/prism.js"></script>
+    <script src="kss-assets/js/kss.js"></script>
+    <script src="../js/kss.js"></script>
 <script src="../js/atomic-bulldog.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/ireade/caniuse-embed/caniuse-embed.min.js"></script>
 
+    <!-- end scripts -->
 
-
-<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
-</body>
+  </body>
 </html>

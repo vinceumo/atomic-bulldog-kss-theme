@@ -4,6 +4,7 @@
   "mask": "*.scss",
   "placeholder": "[modifier]",
   "destination": "../static/styleguide/",
+  "builder": "../kss_theme/",
   "css": [
     "../css/themes/kss-overrides.min.css",
     "../css/screen.css",
