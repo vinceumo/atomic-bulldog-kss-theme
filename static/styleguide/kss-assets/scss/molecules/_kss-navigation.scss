@@ -30,18 +30,21 @@
   
     &:hover, &:focus {
       background-color: color-gray(20);
+      outline-color: transparent;
+      border-color: transparent;
+      box-shadow: 0 0 0 transparent;
     }
 
     &.is-active{
-      background-color: color(primary, transparent);
+      background-color: color(primary, light);
 
       &:hover, &:focus {
-        background-color: color(primary, transparent);
+        background-color: color(primary, light);
       }
     }
 
     .kss-nav__ref{
-      color: color-gray(70);
+      font-size: calc(#{font-size(paragraph)} - 0.15rem);
     }
   }
 }

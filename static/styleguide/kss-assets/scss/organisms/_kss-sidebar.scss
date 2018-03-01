@@ -1,4 +1,6 @@
-.kss-sidebar{
+.kss-sidebar {
   height: 100vh;
   padding: spacer(3);
+  background-color: color-gray(10);
+  overflow-y: auto;
 }
