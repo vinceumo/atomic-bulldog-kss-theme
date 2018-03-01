@@ -3,4 +3,6 @@
   padding: spacer(3);
   background-color: color-gray(10);
   overflow-y: auto;
+  position: sticky;
+  top: 0;
 }

@@ -26,11 +26,15 @@
 @import "vendors/modern-normalize";
 @import "vendors/family";
 
+//atoms
+@import "atoms/kss-typography";
+
 //layouts
 @import "layouts/kss-container";
 
 //molecules
 @import "molecules/kss-navigation";
+@import "molecules/kss-section";
 
 //organisms
 @import "organisms/kss-sidebar";

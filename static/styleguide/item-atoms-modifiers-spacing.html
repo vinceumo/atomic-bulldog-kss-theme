@@ -27,83 +27,83 @@
         <ul class="kss-nav">
           <li>
             <a class="kss-nav-link" href="index.html">
-              <span class="kss-nav__ref">0</span>
+              <span class="kss-nav__ref">0 - </span>
               <span class="kss-nav__name">Introduction</span>
             </a>
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-atoms.html">
-              <span class="kss-nav__ref">1</span>
+              <span class="kss-nav__ref">1 - </span>
               <span class="kss-nav__name">Atoms</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-molecules.html">
-              <span class="kss-nav__ref">2</span>
+              <span class="kss-nav__ref">2 - </span>
               <span class="kss-nav__name">Molecules</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-organisms.html">
-              <span class="kss-nav__ref">3</span>
+              <span class="kss-nav__ref">3 - </span>
               <span class="kss-nav__name">Organisms</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-layout.html">
-              <span class="kss-nav__ref">4</span>
+              <span class="kss-nav__ref">4 - </span>
               <span class="kss-nav__name">Layouts</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-templates.html">
-              <span class="kss-nav__ref">5</span>
+              <span class="kss-nav__ref">5 - </span>
               <span class="kss-nav__name">Templates</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-variables.html">
-              <span class="kss-nav__ref">6</span>
+              <span class="kss-nav__ref">6 - </span>
               <span class="kss-nav__name">Sass variables</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-mixins.html">
-              <span class="kss-nav__ref">7</span>
+              <span class="kss-nav__ref">7 - </span>
               <span class="kss-nav__name">Sass Mixins</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-functions.html">
-              <span class="kss-nav__ref">8</span>
+              <span class="kss-nav__ref">8 - </span>
               <span class="kss-nav__name">Sass Functions</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-vendors.html">
-              <span class="kss-nav__ref">9</span>
+              <span class="kss-nav__ref">9 - </span>
               <span class="kss-nav__name">Vendors</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-themes.html">
-              <span class="kss-nav__ref">10</span>
+              <span class="kss-nav__ref">10 - </span>
               <span class="kss-nav__name">Themes</span>
             </a>
             
           </li>
           <li>
             <a class="kss-nav-link  has-children" href="section-settings.html">
-              <span class="kss-nav__ref">11</span>
+              <span class="kss-nav__ref">11 - </span>
               <span class="kss-nav__name">Project settings</span>
             </a>
             
@@ -115,8 +115,78 @@
 
     <main class="kss-main">
       <div class="kss-container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dolore impedit nostrum? Maxime deleniti, vitae
-          sunt in est cum eaque, qui, porro repudiandae fugit quaerat reiciendis reprehenderit. Quae, fugit dolorum?</p>
+        <!-- documentation. -->
+        <section class="kss-documentation">
+
+          <!--
+          display each section, in order.
+          the "root" element comes first in this loop, and can be detected using
+          the "#if @first" block as seen below.
+        -->
+           
+          <header class="kss-section kss-section--depth-3" id="kssref-atoms-modifiers-spacing">
+
+              <div class="kss-section__content">
+                <a class="kss-section__permalink" href="#kssref-atoms-modifiers-spacing">
+                  <h3 class="kss-h3">
+                    <span class="kss-section__ref">1.9.5</span> - 
+                    <span class="kss-section__name">Spacing</span>
+                  </h3>
+                </a>
+                <p class="kss-section__source">Source:
+                  <span>atoms/modifiers/_spacing.scss</span>, line
+                  <span>97</span>
+                </p>
+                 
+                <div class="kss-section__description"><p>These classes allow setting padding (p) and margin (m)</p>
+<p>The classes are named using the format has-{property}{sides}-{size} for xs and has-{property}{sides}-{breakpoint}-{size} for the other breakpoints.</p>
+<p>Parameters:</p>
+<ul>
+<li><code>size</code> - Size from the map $spacers from 0 to 6</li>
+<li><code>sides</code> - Optional value. If no set then the 4 sides will be targeted, <code>x</code> target left and right, <code>y</code> top and bottom, <code>r</code> right, <code>l</code> left, <code>t</code> top, <code>b</code> bottom.</li>
+<li><code>property</code> - <code>m</code> for margin, <code>p</code> for padding.</li>
+</ul>
+<p>Usage:</p>
+<ul>
+<li><code>has-mt-3</code> =&gt; has margin top var(--spacer-3) =&gt; margin-top: var(--spacer-3);</li>
+<li><code>has-p-sm-3</code> =&gt; has padding var(--spacer-3) from sm breakpoint</li>
+<li><code>has-mx-lg-3</code> =&gt; has margin left and right var(--spacer-3) from lg breakpoint</li>
+</ul>
+</div>
+                               </div>
+
+              <div class="kss-section__example-container">
+                <div class="kss-section__examples">
+                  <p class="kss-modifiers__heading">Example:</p>
+
+
+                  <div class="kss-modifiers__example"><div class="has-bg-primary has-p-1 has-p-sm-6 has-p-md-1 has-p-lg-6 has-p-xl-1">
+ <div class="has-bg-success has-p-1">
+   <p class="has-mt-6 has-mx-sm-1 has-mx-md-5 has-mt-lg-3">
+     Age, inquies, ista parva sunt. An vero, inquit, quisquam potest probare, quod perceptfum, quod. Non potes, nisi retexueris illa. De hominibus dici non necesse est. Nam quid possumus facere melius? Erit enim mecum, si tecum erit.
+   </p>
+ </div>
+</div></div>
+
+
+                </div>
+
+                <div class="kss-section__markup">
+                  <pre><code class="language-markup">&lt;div class&#x3D;&quot;has-bg-primary has-p-1 has-p-sm-6 has-p-md-1 has-p-lg-6 has-p-xl-1&quot;&gt;
+ &lt;div class&#x3D;&quot;has-bg-success has-p-1&quot;&gt;
+   &lt;p class&#x3D;&quot;has-mt-6 has-mx-sm-1 has-mx-md-5 has-mt-lg-3&quot;&gt;
+     Age, inquies, ista parva sunt. An vero, inquit, quisquam potest probare, quod perceptfum, quod. Non potes, nisi retexueris illa. De hominibus dici non necesse est. Nam quid possumus facere melius? Erit enim mecum, si tecum erit.
+   &lt;/p&gt;
+ &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+              </div>
+
+               
+          </header>
+  
+        </section>
+        <!-- /documentation. -->
       </div>
     </main>
 

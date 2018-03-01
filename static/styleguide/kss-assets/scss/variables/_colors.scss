@@ -6,10 +6,10 @@ $color-gray-prefix: --color-gray-;
 $color-themes: (
   primary:
     (
-      base: #4c5c8c,
-      dark: darken(#4c5c8c, 15%),
-      light: lighten(#4c5c8c, 40%),
-      transparent: transparentize(#4c5c8c, 0.5),
+      base: #87CCE5,
+      dark: darken(#87CCE5, 15%),
+      light: lighten(#87CCE5, 20%),
+      transparent: transparentize(#87CCE5, 0.5),
       contrast: #ffffff
     )
 );
