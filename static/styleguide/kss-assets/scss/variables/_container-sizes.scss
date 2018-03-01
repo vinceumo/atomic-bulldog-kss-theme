@@ -3,10 +3,10 @@
 // ------------------------------
 $container-size-prefix: --container-size-;
 $container-sizes: (
-  sm: map-get($breakpoints, sm) - 230px - 30px,
-  md: map-get($breakpoints, md) - 230px - 40px,
-  lg: map-get($breakpoints, lg) - 230px - 50px,
-  xl: map-get($breakpoints, xl) - 230px - 400px
+  sm: map-get($breakpoints, sm) - 250px - 30px,
+  md: map-get($breakpoints, md) - 250px - 40px,
+  lg: map-get($breakpoints, lg) - 250px - 50px,
+  xl: map-get($breakpoints, xl) - 250px - 400px
 );
 
 // ------------------------------

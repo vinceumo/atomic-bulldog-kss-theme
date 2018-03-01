@@ -27,6 +27,7 @@
 @import "vendors/family";
 
 //atoms
+@import "atoms/kss-brand";
 @import "atoms/kss-typography";
 
 //layouts
@@ -34,6 +35,7 @@
 
 //molecules
 @import "molecules/kss-navigation";
+@import "molecules/kss-search";
 
 //organisms
 @import "organisms/kss-sidebar";

@@ -19,11 +19,30 @@
       <div class="kss-brand">
         <p>{{options.title}}</p>
       </div>
+      <div class="kss-search">
+        <input type="text" id="kss-search__input" onkeyup="kssSearch()" placeholder="Search in this library..">
+        <ul id="kss-search__list">
+          {{#each menu}}
+          <li>
+            <a class="kss-nav-link {{#if isActive}}is-active{{/if}} {{#if children}}has-children{{/if}}" href="section-{{referenceURI}}.html">
+              {{referenceNumber}} - {{header}}
+            </a>
+            {{#if children}} {{#each children}}
+            <li class="{{#if isGrandChild}}is-grandchild{{/if}}">
+              <a class="kss-nav-link" href="section-{{../referenceURI}}.html#kssref-{{referenceURI}}">
+                {{referenceNumber}} - {{header}}
+              </a>
+            </li>
+            {{/each}} {{/if}}
+          </li>
+          {{/each}}
+        </ul>
+      </div>
       <!-- navigation. -->
       <nav class="kss-navigation">
         <ul class="kss-nav">
           <li>
-            <a class="kss-nav-link" href="index.html">
+            <a class="kss-nav-link {{#if isActive}}is-active{{/if}}" href="index.html">
               <span class="kss-nav__ref">0 - </span>
               <span class="kss-nav__name">Introduction</span>
             </a>
@@ -69,15 +88,15 @@
           the "#if @first" block as seen below.
         -->
           {{#each sections}} {{#if @first}}
-          <header class="kss-section kss-section--depth-{{depth}}" id="kssref-{{referenceURI}}">
+          <header class="kss-section" id="kssref-{{referenceURI}}">
             {{else}}
-            <section class="kss-section kss-section--depth-{{depth}}" id="kssref-{{referenceURI}}">
+            <section class="kss-section" id="kssref-{{referenceURI}}">
               {{/if}}
 
               <div class="kss-section__content">
                 <a class="kss-section__permalink" href="#kssref-{{referenceURI}}">
                   <h{{depth}} class="kss-h{{depth}}">
-                    <span class="kss-section__ref">{{referenceNumber}}</span> - 
+                    <span class="kss-section__ref">{{referenceNumber}}</span> -
                     <span class="kss-section__name">{{header}}</span>
                   </h{{depth}}>
                 </a>
@@ -109,8 +128,7 @@
                   <p class="kss-modifiers__heading">Example{{#if modifiers}}s{{/if}}:</p>
 
                   {{#if modifiers}}
-                  <code class="kss-modifiers__name">Default styling</code>
-                  {{/if}}
+                  <code class="kss-modifiers__name">Default styling</code> {{/if}}
 
                   <div class="kss-modifiers__example">{{{markup}}}</div>
 
@@ -136,15 +154,7 @@
         <!-- /documentation. -->
       </div>
     </main>
-
-    <footer class="kss-footer">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam mollitia beatae explicabo iure. Repellat iste sapiente,
-        ducimus soluta cum ratione velit ut aut quos in laudantium sint quae accusantium.</p>
-    </footer>
   </div>
-
-
-
 
   <!-- scripts -->
   <script src="kss-assets/js/vendors/jquery-3.3.1.min.js"></script>
