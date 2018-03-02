@@ -1,3 +1,31 @@
+$(document).ready(function() {
+  kssShowColors();
+
+  if (matchMedia) {
+    var mq = window.matchMedia("(min-width: 1200px)");
+    mq.addListener(resetMobileNav);
+    resetMobileNav(mq);
+  }
+
+  $("#kss-search__input").on("focusin", function() {
+    $("#kss-search__list").show();
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest(".kss-search").length) {
+      if ($("#kss-search__list").is(":visible")) {
+        $("#kss-search__list").hide();
+      }
+    }
+  });
+
+  $(".kss-burger-container").on("click", ".kss-burger", function() {
+    $(this).toggleClass("is-active");
+    $(".kss-sidebar").toggleClass("is-active");
+    $("body").toggleClass("kss-is-no-scroll");
+  });
+});
+
 function kssSearch() {
   // Declare variables
   var input, filter, ul, li, a, i;
@@ -17,25 +45,18 @@ function kssSearch() {
   }
 }
 
-$(document).ready(function() {
-
-  kssShowColors();
-
-  $("#kss-search__input").on("focusin", function() {
-    $("#kss-search__list").show();
-  });
-
-  $(document).click(function(event) {
-    if (!$(event.target).closest(".kss-search").length) {
-      if ($("#kss-search__list").is(":visible")) {
-        $("#kss-search__list").hide();
-      }
-    }
-  });
-});
+function resetMobileNav(mq) {
+  if (mq.matches) {
+    $(".kss-burger").removeClass("is-active");
+    $(".kss-sidebar").removeClass("is-active");
+    $("body").removeClass("kss-is-no-scroll");
+  }
+}
 
 function getCssVar(prefix, value) {
-  var htmlStyles = window.getComputedStyle(document.querySelector("#kss-map-colors"));
+  var htmlStyles = window.getComputedStyle(
+    document.querySelector("#kss-map-colors")
+  );
   var cssVar = "--" + prefix + "-" + value;
   var cssVarResult = htmlStyles.getPropertyValue(cssVar);
 
@@ -57,15 +78,25 @@ function kssShowColors() {
       var colorVal = getCssVar(colorPrefix, value);
       var cssVar = "--" + colorPrefix + "-" + value;
       var colorItemHtml =
-        '<div class="kss-color-item-child" style="background-color: var(' + cssVar +')">' +
-        '<div class="kss-color-item-legend">'+
-        '<p>color(' + color + ', ' + subValue +')</p>' +
-        '<p>' + colorVal + '</p>' +
-        '<p>var(' + cssVar +')</p>' +
-        '</div>' +
-        '</div>';
+        '<div class="kss-color-item-child" style="background-color: var(' +
+        cssVar +
+        ')">' +
+        '<div class="kss-color-item-legend">' +
+        "<p>color(" +
+        color +
+        ", " +
+        subValue +
+        ")</p>" +
+        "<p>" +
+        colorVal +
+        "</p>" +
+        "<p>var(" +
+        cssVar +
+        ")</p>" +
+        "</div>" +
+        "</div>";
 
-      kssColorItemBlock.insertAdjacentHTML( 'beforeend', colorItemHtml );
+      kssColorItemBlock.insertAdjacentHTML("beforeend", colorItemHtml);
     });
   });
 }

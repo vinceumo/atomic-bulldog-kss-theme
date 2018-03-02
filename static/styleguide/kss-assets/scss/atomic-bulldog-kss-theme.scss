@@ -11,14 +11,12 @@
 @import "mixins/media-queries";
 
 //variables
-@import "variables/aspect-ratios";
 @import "variables/root-classes";
 @import "variables/breakpoints";
 @import "variables/colors";
 @import "variables/container-sizes";
 @import "variables/font-families";
 @import "variables/font-sizes";
-@import "variables/grid";
 @import "variables/spacers";
 @import "variables/z-index";
 
@@ -26,12 +24,16 @@
 @import "vendors/modern-normalize";
 @import "vendors/family";
 
-//atoms
-@import "atoms/kss-brand";
-@import "atoms/kss-typography";
 
 //layouts
 @import "layouts/kss-container";
+
+//atoms
+@import "atoms/kss-brand";
+@import "atoms/kss-burger";
+@import "atoms/kss-typography";
+@import "atoms/kss-no-scroll";
+
 
 //molecules
 @import "molecules/kss-navigation";
@@ -41,5 +43,6 @@
 @import "organisms/kss-sidebar";
 @import "organisms/kss-section";
 @import "organisms/kss-markdown";
+
 //templates
 @import "templates/kss-page-container";
