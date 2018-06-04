@@ -1,4 +1,4 @@
-# Atomic Bulldog kss theme :collision: :dog:
+# Atomic Bulldog kss theme / builder :collision: :dog:
 
 <p align="center"> 
 <img src="https://image.ibb.co/mmS6Hc/Artboard_1.png" alt="Atomic Bulldog Logo">
@@ -55,3 +55,20 @@ You will need to use CSS custom properties to output your colors:
 ### `.kss-box`
 
 This class will output a box with background color primary.
+
+## Changelog
+
+This section only show the last changelog
+To see all changelog ==> https://github.com/vinceumo/atomic-bulldog-kss-theme/blob/master/CHANGELOG.md
+
+## [1.0.1] - 2018-06-04
+
+### Fixed
+
+- Prism select color was too light
+- kss title position
+
+### Added
+
+- full screen option
+- Individual view option
