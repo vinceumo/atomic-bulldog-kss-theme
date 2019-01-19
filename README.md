@@ -6,7 +6,7 @@
 
 This is a custom template for the KSS-node living style guide, build for [Atomic Bulldog](https://github.com/vinceumo/atomic-bulldog)
 
-*Demo*: https://vinceumo.github.io/atomic-bulldog-style-guide-demo/styleguide/index.html
+*Demo*: https://vinceumo.github.io/atomic-bulldog/styleguide/
 
 ## Install Atomic Bulldog kss theme
 
