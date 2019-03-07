@@ -6,7 +6,7 @@
 
 This is a custom template for the KSS-node living style guide, build for [Atomic Bulldog](https://github.com/vinceumo/atomic-bulldog)
 
-*Demo*: https://vinceumo.github.io/atomic-bulldog/styleguide/
+_Demo_: https://vinceumo.github.io/atomic-bulldog/styleguide/
 
 ## Install Atomic Bulldog kss theme
 
@@ -18,6 +18,10 @@ In `kss-config.json` add `"builder": "../kss_theme/"`:
 ```json
 {
   "title": "Atomic Bulldog - UI/pattern library",
+  "brandColorHue": 203,
+  "brandColorSaturation": 36,
+  "brandColorLightness": 46,
+  "logo": "https://image.ibb.co/mmS6Hc/Artboard_1.png",
   "source": "",
   "mask": "*.scss",
   "placeholder": "[modifier]",
@@ -28,13 +32,9 @@ In `kss-config.json` add `"builder": "../kss_theme/"`:
 }
 ```
 
-## Customize Atomic Bulldog kss theme
-
-You can change the primary color in `kss-theme/scss/variables/_colors.scss`
-
 ## Custom classes
 
-### Color swatches 
+### Color swatches
 
 You will need to use CSS custom properties to output your colors:
 
@@ -60,15 +60,3 @@ This class will output a box with background color primary.
 
 This section only show the last changelog
 To see all changelog ==> https://github.com/vinceumo/atomic-bulldog-kss-theme/blob/master/CHANGELOG.md
-
-## [1.0.1] - 2018-06-04
-
-### Fixed
-
-- Prism select color was too light
-- kss title position
-
-### Added
-
-- full screen option
-- Individual view option
